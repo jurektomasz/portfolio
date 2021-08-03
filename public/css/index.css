@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 20px;
+  display: flex; }
+
+aside {
+  height: 100vh;
+  background-color: #2dc7ff;
+  padding: 2rem;
+  flex-basis: 15%; }
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #2dc7ffb2;
+  padding: 2rem;
+  flex-basis: 85%; }
