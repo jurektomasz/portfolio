@@ -5,21 +5,151 @@
 }
 
 body {
-  font-size: 20px;
+  font-size: 10px;
   display: flex;
+  color: #000;
 }
 
 aside {
   height: 100vh;
-  background-color: #2dc7ff;
-  padding: 2rem;
-  flex-basis: 15%;
+  background-color: #044b7f;
+  flex-basis: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 main {
+  position: relative;
   height: 100vh;
   overflow-y: scroll;
-  background-color: #2dc7ffb2;
-  padding: 2rem;
-  flex-basis: 85%;
+  flex-basis: 80%;
+}
+
+.welcome {
+  height: 90vh;
+  padding: 3rem;
+  padding-left: 5rem;
+  font-size: 2.5rem;
+  // background-image: linear-gradient(to right, #044b7f, #044c7fa6);
+  background-color: #044c7fa6;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &-intro {
+  }
+  &-button {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.pre-heading {
+  position: relative;
+  font-size: 1rem;
+  text-align: center;
+
+  &::before {
+    content: "\223c";
+    width: 5rem;
+    position: absolute;
+    left: -4rem;
+    top: -7px;
+    font-size: 1.6rem;
+  }
+  &::after {
+    content: "\223c";
+    width: 5rem;
+    position: absolute;
+    right: -4rem;
+    top: -7px;
+    font-size: 1.6rem;
+  }
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+figcaption {
+  text-align: right;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    &:hover {
+      color: #add8e6;
+    }
+  }
+}
+
+.navigation {
+  padding: 2rem 0;
+  font-size: 1.6rem;
+
+  &-link {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      background-color: #add8e6;
+    }
+  }
+}
+
+.logo {
+  text-align: right;
+  padding: 1rem;
+
+  &-name {
+    font-size: 2rem;
+  }
+  &-desc {
+    font-size: 1rem;
+  }
+}
+
+.side-nav_bottom {
+  padding: 1rem;
+}
+
+.skills-list {
+  display: flex;
+}
+.skills-item {
+  padding: 1rem;
 }

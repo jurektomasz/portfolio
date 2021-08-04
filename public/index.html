@@ -5,58 +5,254 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script
+      src="https://kit.fontawesome.com/e19ec309b3.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="./css/index.css" />
+
     <title>Tomasz Jurek</title>
   </head>
   <body>
-    <aside>THIS WILL BE NAV</aside>
-    <main>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
-      <div>THIS WILL BE MAIN CONTENT</div>
+    <!-- side navigation section -->
+    <aside id="side-nav">
+      <div class="side-nav_top">
+        <!-- logo -->
+        <div class="logo">
+          <h3 class="logo-name">Tomasz Jurek</h3>
+          <p class="logo-desc">Web Developer</p>
+        </div>
+        <!-- nav -->
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#welcome" class="navigation-link"
+                ><i class="fas fa-home"></i
+                ><span class="navigation-link_desc">Welcome</span></a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#about" class="navigation-link"
+                ><i class="fas fa-user"></i
+                ><span class="navigation-link_desc">About</span></a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#skills" class="navigation-link"
+                ><i class="fas fa-code"></i
+                ><span class="navigation-link_desc">Skills</span></a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#projects" class="navigation-link"
+                ><i class="fas fa-th"></i
+                ><span class="navigation-link_desc">Projects</span></a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#Contact" class="navigation-link"
+                ><i class="fas fa-envelope"></i
+                ><span class="navigation-link_desc">Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- contact icons -->
+      <div class="side-nav_bottom">
+        <ul class="icons">
+          <li class="icons-item">
+            <a href="mailto:tjurek@vp.pl" class="icons-link"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li class="icons-item">
+            <a href="https://github.com/" class="icons-link"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </li>
+          <li class="icons-item">
+            <a href="https://www.linkedin.com/" class="icons-link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of side navigation section -->
+    <main id="main-content">
+      <!-- start welcome section -->
+      <section id="welcomeSection" class="welcome">
+        <h1 class="welcome-intro">
+          Hi!
+          <br />
+          I'm Tomasz
+          <br />
+          I build stuff for the web.
+        </h1>
+        <button class="welcome-button">Check my projects</button>
+      </section>
+      <!-- start about section -->
+      <section id="aboutSection" class="about">
+        <header>
+          <div class="pre-heading">just a few words</div>
+          <h2 class="heading-secondary">About me</h2>
+        </header>
+
+        <figure class="about-cite">
+          <blockquote>
+            <cite>Create with the heart, build with the mind.</cite>
+          </blockquote>
+          <figcaption>Criss Jami</figcaption>
+        </figure>
+
+        <div>
+          <p>
+            I am Tomasz Jurek, self-taught front-end developer with passion to
+            coding and creating new thing.
+          </p>
+          <p></p>
+        </div>
+      </section>
+      <!-- start skills section -->
+      <section id="skillsSection" class="about">
+        <header>
+          <div class="pre-heading">look at my</div>
+          <h2 class="heading-secondary">Skills</h2>
+        </header>
+        <div class="skills-container">
+          <ul class="skills-list">
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/html.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">HTML</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/css.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">CSS</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/bootstrap.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">Bootstrap</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/sass.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">SASS</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/js.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">Javascript</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/react.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">React</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/redux.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">Redux</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/node.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">Node</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/mongo.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">Mongo</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/git.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">Git</p>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skills-item_container">
+                <img
+                  src="./assets/npm.png"
+                  alt="html logo"
+                  class="skills-item_logo"
+                />
+                <p class="skills-item_desc">npm</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- start projects section -->
+      <section id="projectsSection" class="about">
+        <header>
+          <div class="pre-heading">check up my</div>
+          <h2 class="heading-secondary">Projects</h2>
+        </header>
+      </section>
+      <!-- start contact section -->
+      <section id="contactSection" class="about">
+        <header>
+          <div class="pre-heading">do not hesitate to</div>
+          <h2 class="heading-secondary">Contact me</h2>
+        </header>
+        <form></form>
+      </section>
+      <!-- start footer -->
+      <footer>Copyright &copy; Tomasz Jurek 2021</footer>
     </main>
   </body>
 </html>
