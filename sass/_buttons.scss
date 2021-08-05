@@ -1,0 +1,13 @@
+.btn {
+  &-primary {
+    cursor: pointer;
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 1px solid $third-color;
+    color: $third-color;
+    border-radius: 1rem;
+    background: transparent;
+  }
+}

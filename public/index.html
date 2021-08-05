@@ -18,41 +18,60 @@
     <!-- side navigation section -->
     <aside id="side-nav">
       <div class="side-nav_top">
+        <div class="side-nav_toggle">
+          <i class="fas fa-bars open"></i>
+          <i class="fas fa-times close"></i>
+        </div>
         <!-- logo -->
         <div class="logo">
-          <h3 class="logo-name">Tomasz Jurek</h3>
-          <p class="logo-desc">Web Developer</p>
+          <h3 class="logo-name">TJ</h3>
         </div>
         <!-- nav -->
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="#welcome" class="navigation-link"
-                ><i class="fas fa-home"></i
+            <li class="navigation-item active">
+              <b></b>
+              <b></b>
+              <a href="#welcomeSection" class="navigation-link"
+                ><span class="navigation-link_icon"
+                  ><i class="fas fa-home"></i></span
                 ><span class="navigation-link_desc">Welcome</span></a
               >
             </li>
             <li class="navigation-item">
-              <a href="#about" class="navigation-link"
-                ><i class="fas fa-user"></i
+              <b></b>
+              <b></b>
+              <a href="#aboutSection" class="navigation-link"
+                ><span class="navigation-link_icon"
+                  ><i class="fas fa-user"></i></span
                 ><span class="navigation-link_desc">About</span></a
               >
             </li>
             <li class="navigation-item">
-              <a href="#skills" class="navigation-link"
-                ><i class="fas fa-code"></i
-                ><span class="navigation-link_desc">Skills</span></a
+              <b></b>
+              <b></b>
+              <a href="#skillsSection" class="navigation-link">
+                <span class="navigation-link_icon"
+                  ><i class="fas fa-code"></i
+                ></span>
+                <span class="navigation-link_desc">Skills</span></a
               >
             </li>
             <li class="navigation-item">
-              <a href="#projects" class="navigation-link"
-                ><i class="fas fa-th"></i
+              <b></b>
+              <b></b>
+              <a href="#projectsSection" class="navigation-link"
+                ><span class="navigation-link_icon"
+                  ><i class="fas fa-th"></i></span
                 ><span class="navigation-link_desc">Projects</span></a
               >
             </li>
             <li class="navigation-item">
-              <a href="#Contact" class="navigation-link"
-                ><i class="fas fa-envelope"></i
+              <b></b>
+              <b></b>
+              <a href="#ContactSection" class="navigation-link"
+                ><span class="navigation-link_icon"
+                  ><i class="fas fa-envelope"></i></span
                 ><span class="navigation-link_desc">Contact</span></a
               >
             </li>
@@ -68,12 +87,15 @@
             ></a>
           </li>
           <li class="icons-item">
-            <a href="https://github.com/" class="icons-link"
+            <a href="https://github.com/" target="_blank" class="icons-link"
               ><i class="fab fa-github-square"></i
             ></a>
           </li>
           <li class="icons-item">
-            <a href="https://www.linkedin.com/" class="icons-link"
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="icons-link"
               ><i class="fab fa-linkedin"></i
             ></a>
           </li>
@@ -84,18 +106,28 @@
     <main id="main-content">
       <!-- start welcome section -->
       <section id="welcomeSection" class="welcome">
-        <h1 class="welcome-intro">
-          Hi!
-          <br />
-          I'm Tomasz
-          <br />
-          I build stuff for the web.
-        </h1>
-        <button class="welcome-button">Check my projects</button>
+        <div class="background">
+          <div class="background-text">Let your website</div>
+          <div class="background-text">
+            spread<br />
+            its wings
+          </div>
+        </div>
+        <div class="welcome-intro">
+          <h1 class="heading-primary">
+            Hi!
+            <br />
+            I'm Tomasz,
+          </h1>
+          <p class="heading-desc">Frontend Developer</p>
+          <button class="welcome-button btn btn-primary">
+            Check my projects
+          </button>
+        </div>
       </section>
       <!-- start about section -->
       <section id="aboutSection" class="about">
-        <header>
+        <header class="heading-container">
           <div class="pre-heading">just a few words</div>
           <h2 class="heading-secondary">About me</h2>
         </header>
@@ -104,20 +136,28 @@
           <blockquote>
             <cite>Create with the heart, build with the mind.</cite>
           </blockquote>
-          <figcaption>Criss Jami</figcaption>
+          <figcaption>- Criss Jami</figcaption>
         </figure>
 
-        <div>
-          <p>
+        <div class="about-text">
+          <p class="about-text_paragraph">
             I am Tomasz Jurek, self-taught front-end developer with passion to
-            coding and creating new thing.
+            coding and creating new things.
           </p>
-          <p></p>
+          <p class="about-text_paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            quod enim obcaecati nihil error earum exercitationem eligendi
+            necessitatibus debitis nemo.
+          </p>
+          <p class="about-text_paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            temporibus.
+          </p>
         </div>
       </section>
       <!-- start skills section -->
       <section id="skillsSection" class="about">
-        <header>
+        <header class="heading-container">
           <div class="pre-heading">look at my</div>
           <h2 class="heading-secondary">Skills</h2>
         </header>
@@ -126,7 +166,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/html.png"
+                  src="./assets/skills/html.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -136,7 +176,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/css.png"
+                  src="./assets/skills/css.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -146,7 +186,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/bootstrap.png"
+                  src="./assets/skills/bootstrap.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -156,7 +196,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/sass.png"
+                  src="./assets/skills/sass.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -166,7 +206,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/js.png"
+                  src="./assets/skills/js.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -176,7 +216,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/react.png"
+                  src="./assets/skills/react.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -186,7 +226,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/redux.png"
+                  src="./assets/skills/redux.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -196,7 +236,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/node.png"
+                  src="./assets/skills/node.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -206,7 +246,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/mongo.png"
+                  src="./assets/skills/mongo.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -216,7 +256,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/git.png"
+                  src="./assets/skills/git.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -226,7 +266,7 @@
             <li class="skills-item">
               <div class="skills-item_container">
                 <img
-                  src="./assets/npm.png"
+                  src="./assets/skills/npm.png"
                   alt="html logo"
                   class="skills-item_logo"
                 />
@@ -238,21 +278,104 @@
       </section>
       <!-- start projects section -->
       <section id="projectsSection" class="about">
-        <header>
+        <header class="heading-container">
           <div class="pre-heading">check up my</div>
           <h2 class="heading-secondary">Projects</h2>
         </header>
+        <div class="projects-container">
+          <div class="project">
+            <div class="project-desc">
+              <div class="project-desc_tech">
+                <h3>Technologies:</h3>
+                <p>HTML, CSS, JS, REACT, NODE, MONGO</p>
+              </div>
+              <div class="project-desc_btns">
+                <button>LIVE</button>
+                <button>REPO</button>
+              </div>
+              <div class="project-desc_text">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quaerat, magni.
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quaerat, magni.
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quaerat, magni.
+                </p>
+              </div>
+            </div>
+            <div class="project-img">
+              <img
+                class="project-img_item"
+                src="./assets/projects/shortly/1.jpg"
+                alt="project slideshow"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- FOR SHORTLY PROJECT -->
+        <!-- www.frontendmentor.io -->
+        <!-- ------------------- -->
       </section>
       <!-- start contact section -->
       <section id="contactSection" class="about">
-        <header>
+        <header class="heading-container">
           <div class="pre-heading">do not hesitate to</div>
           <h2 class="heading-secondary">Contact me</h2>
         </header>
-        <form></form>
+
+        <form class="form">
+          <div class="form-group">
+            <input
+              id="inputName"
+              type="text"
+              class="form-input"
+              name="name"
+              placeholder="Name*"
+            /><label for="inputName" class="form-label"></label>
+          </div>
+          <div class="form-group">
+            <input
+              id="inputEmail"
+              type="email"
+              class="form-input"
+              name="email"
+              placeholder="Email*"
+            /><label for="inputEmail" class="form-label"></label>
+          </div>
+          <div class="form-group">
+            <input
+              id="inputSubject"
+              type="text"
+              class="form-input"
+              name="subject"
+              placeholder="Subject*"
+            /><label for="inputSubject" class="form-label"></label>
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              id="inputMessage"
+              class="form-input"
+              placeholder="Your message*"
+            ></textarea>
+            <label for="inputMessage" class="form-label"></label>
+          </div>
+          <button type="submit" class="form-btn btn btn-primary">
+            Send message!
+          </button>
+        </form>
       </section>
       <!-- start footer -->
-      <footer>Copyright &copy; Tomasz Jurek 2021</footer>
+      <footer>
+        <p>Copyright &copy; Tomasz Jurek 2021</p>
+      </footer>
     </main>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

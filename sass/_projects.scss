@@ -1,0 +1,24 @@
+.projects {
+  &-container {
+    width: 100%;
+  }
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+
+  &-desc {
+    background-color: $third-color;
+    padding: 1rem;
+  }
+
+  &-img {
+    flex: 1 1;
+    border: 1px solid black;
+
+    &_item {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// .heading-container {
+//   margin-bottom: 4rem;
+// }
+
+.heading-secondary {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 4rem;
+}
+
+.pre-heading {
+  position: relative;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $third-color;
+
+  &::before,
+  &::after {
+    content: "\223c";
+    position: absolute;
+    top: -3px;
+    font-size: 1.6rem;
+  }
+
+  &::before {
+    left: -4rem;
+  }
+  &::after {
+    right: -4rem;
+  }
+}
+
+.heading-desc {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+}

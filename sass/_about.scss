@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem;
+  margin-bottom: 2rem;
+
+  &-text {
+    margin-top: 1rem;
+    font-weight: bolder;
+  }
+}
+
+.about-cite {
+  font-size: 1.6rem;
+  padding: 2rem 3rem;
+  border-left: 0.5rem solid $third-color;
+  letter-spacing: 0.5rem;
+}
+
+.about-text {
+  font-size: 2rem;
+  width: 70%;
+  padding: 2rem;
+  line-height: 1.1;
+
+  &_paragraph {
+    margin-bottom: 1rem;
+  }
+}

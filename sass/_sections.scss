@@ -1,0 +1,45 @@
+main {
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-left: 8rem;
+}
+
+.welcome {
+  position: relative;
+  height: 100vh;
+  padding: 3rem;
+  padding-left: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-intro,
+  &-button {
+    z-index: 2;
+  }
+
+  &-intro {
+    font-size: 5rem;
+    width: 70%;
+  }
+
+  &-button {
+    margin-top: 3rem;
+  }
+}
+
+.background {
+  position: absolute;
+  &-text {
+    color: rgba($second-color, 0.03);
+    letter-spacing: 4rem;
+    text-align: right;
+
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 15rem;
+    z-index: -1;
+  }
+}
