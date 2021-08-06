@@ -1,24 +1,82 @@
 .projects {
   &-container {
-    width: 100%;
+    width: 90%;
+    margin-bottom: 2rem;
+
+    @include media-md {
+      width: 100%;
+    }
   }
 }
 
 .project {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+
+  @include media-lg {
+    flex-direction: column;
+  }
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    height: 2px;
+    width: 90%;
+    background-color: $third-color;
+  }
 
   &-desc {
-    background-color: $third-color;
-    padding: 1rem;
+    flex: 1;
+    padding: 2rem;
+    font-size: 2rem;
+
+    &_tech {
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
+      &-item {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding: 1rem;
+        margin: 1rem;
+        color: $main-color;
+        border-radius: 1rem;
+        background-color: $third-color;
+      }
+    }
+
+    &_text {
+    }
+    &_paragraph {
+      margin-top: 1rem;
+    }
   }
 
   &-img {
-    flex: 1 1;
-    border: 1px solid black;
+    flex: 1;
 
     &_item {
       width: 100%;
+      min-width: 50rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+      @include media-sm {
+        min-width: 0;
+        width: 100%;
+      }
+    }
+
+    &_btns {
+      text-align: center;
+      margin-top: 1rem;
     }
   }
 }

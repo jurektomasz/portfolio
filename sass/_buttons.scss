@@ -1,13 +1,41 @@
 .btn {
   &-primary {
+    display: inline-block;
     cursor: pointer;
     padding: 1.5rem 2.5rem;
     font-size: 2rem;
     font-weight: bold;
     text-transform: capitalize;
     border: 1px solid $third-color;
-    color: $third-color;
+    color: $main-color;
     border-radius: 1rem;
-    background: transparent;
+    background: $third-color;
+
+    transition: all 0.3s;
+
+    &:hover {
+      color: $third-color;
+      background: $main-color;
+    }
+  }
+
+  &-secondary {
+    cursor: pointer;
+    font-size: 3rem;
+    text-transform: capitalize;
+    border: 1px solid $third-color;
+    border: none;
+    background-color: transparent;
+    color: $main-color;
+    margin: 0 1rem;
+
+    & i {
+      color: $third-color;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
   }
 }

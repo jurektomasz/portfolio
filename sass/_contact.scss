@@ -1,0 +1,32 @@
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: -1rem;
+
+  &-link {
+    color: $main-color;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+
+    transition: all 0.2s;
+
+    &:hover {
+      color: $third-color;
+    }
+  }
+
+  &-contact {
+    width: 60%;
+    margin: 2rem 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &_link {
+      color: $second-color;
+    }
+  }
+}

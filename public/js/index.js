@@ -1,14 +1,14 @@
-// toggle active class on clicked nav item
+// // toggle active class on clicked nav item
 const navList = document.querySelectorAll(".navigation-item");
-for (let i = 0; i < navList.length; i++) {
-  navList[i].addEventListener("click", () => {
-    let j = 0;
-    while (j < navList.length) {
-      navList[j++].className = "navigation-item";
-    }
-    navList[i].className = "navigation-item active";
-  });
-}
+// for (let i = 0; i < navList.length; i++) {
+//   navList[i].addEventListener("click", () => {
+//     let j = 0;
+//     while (j < navList.length) {
+//       navList[j++].className = "navigation-item";
+//     }
+//     navList[i].className = "navigation-item active";
+//   });
+// }
 
 //toggle nav button
 const toggleBtn = document.querySelector(".side-nav_toggle");
@@ -17,3 +17,64 @@ toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("active");
   toggleAside.classList.toggle("active");
 });
+
+// toggle active class on nav item on document/main scroll
+const welcomeSection = document.querySelector("#skillsSection");
+const aboutSection = document.querySelector("#aboutSection");
+const skillsSection = document.querySelector("#skillsSection");
+const projectsSection = document.querySelector("#projectsSection");
+const contactSection = document.querySelector("#contactSection");
+const welcomeNav = document.querySelector(".navWelcome");
+const aboutNav = document.querySelector(".navAbout");
+const skillsNav = document.querySelector(".navSkills");
+const projectsNav = document.querySelector(".navProjects");
+const contactNav = document.querySelector(".navContact");
+
+document
+  .querySelector("main")
+  .addEventListener("scroll", debounce(toggleOnScroll));
+
+function toggleOnScroll() {
+  const docHeight = this.scrollTop;
+  const aboutStartPoint = aboutSection.offsetTop;
+  const skillsStartPoint = skillsSection.offsetTop;
+  const projectsStartPoint = projectsSection.offsetTop;
+  const contactStartPoint = contactSection.offsetTop;
+
+  if (docHeight < aboutStartPoint - 0.33 * aboutStartPoint) {
+    navList.forEach((item) => item.classList.remove("active"));
+    welcomeNav.classList.add("active");
+  } else if (countHeightPoint(contactStartPoint)) {
+    navList.forEach((item) => item.classList.remove("active"));
+    contactNav.classList.add("active");
+  } else if (countHeightPoint(projectsStartPoint)) {
+    navList.forEach((item) => item.classList.remove("active"));
+    projectsNav.classList.add("active");
+  } else if (countHeightPoint(skillsStartPoint)) {
+    navList.forEach((item) => item.classList.remove("active"));
+    skillsNav.classList.add("active");
+  } else if (countHeightPoint(aboutStartPoint)) {
+    navList.forEach((item) => item.classList.remove("active"));
+    aboutNav.classList.add("active");
+  }
+
+  function countHeightPoint(sectionStartPoint) {
+    return docHeight > sectionStartPoint - window.innerHeight / 3;
+  }
+}
+
+function debounce(func, wait = 15, immediate = true) {
+  let timeout;
+  return function () {
+    const context = this,
+      args = arguments;
+    const later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}

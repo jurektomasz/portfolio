@@ -16,12 +16,12 @@
   </head>
   <body>
     <!-- side navigation section -->
+    <div class="side-nav_toggle">
+      <i class="fas fa-bars open"></i>
+      <i class="fas fa-times close"></i>
+    </div>
     <aside id="side-nav">
       <div class="side-nav_top">
-        <div class="side-nav_toggle">
-          <i class="fas fa-bars open"></i>
-          <i class="fas fa-times close"></i>
-        </div>
         <!-- logo -->
         <div class="logo">
           <h3 class="logo-name">TJ</h3>
@@ -29,7 +29,7 @@
         <!-- nav -->
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item active">
+            <li class="navigation-item navWelcome active">
               <b></b>
               <b></b>
               <a href="#welcomeSection" class="navigation-link"
@@ -38,7 +38,7 @@
                 ><span class="navigation-link_desc">Welcome</span></a
               >
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navAbout">
               <b></b>
               <b></b>
               <a href="#aboutSection" class="navigation-link"
@@ -47,7 +47,7 @@
                 ><span class="navigation-link_desc">About</span></a
               >
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navSkills">
               <b></b>
               <b></b>
               <a href="#skillsSection" class="navigation-link">
@@ -57,7 +57,7 @@
                 <span class="navigation-link_desc">Skills</span></a
               >
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navProjects">
               <b></b>
               <b></b>
               <a href="#projectsSection" class="navigation-link"
@@ -66,10 +66,10 @@
                 ><span class="navigation-link_desc">Projects</span></a
               >
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navContact">
               <b></b>
               <b></b>
-              <a href="#ContactSection" class="navigation-link"
+              <a href="#contactSection" class="navigation-link"
                 ><span class="navigation-link_icon"
                   ><i class="fas fa-envelope"></i></span
                 ><span class="navigation-link_desc">Contact</span></a
@@ -120,13 +120,13 @@
             I'm Tomasz,
           </h1>
           <p class="heading-desc">Frontend Developer</p>
-          <button class="welcome-button btn btn-primary">
+          <a href="#projectsSection" class="welcome-button btn btn-primary">
             Check my projects
-          </button>
+          </a>
         </div>
       </section>
       <!-- start about section -->
-      <section id="aboutSection" class="about">
+      <section id="aboutSection" class="section-about">
         <header class="heading-container">
           <div class="pre-heading">just a few words</div>
           <h2 class="heading-secondary">About me</h2>
@@ -141,22 +141,22 @@
 
         <div class="about-text">
           <p class="about-text_paragraph">
-            I am Tomasz Jurek, self-taught front-end developer with passion to
-            coding and creating new things.
+            &emsp; &emsp;I am Tomasz Jurek, self-taught front-end developer a
+            front-end developer with an economic background. With passion to
+            coding and creating new things I am able to make coherent and unique
+            websites and applications that are usable and accessible to anyone.
+            Check out my latest project on the web portfolio page.
           </p>
           <p class="about-text_paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            quod enim obcaecati nihil error earum exercitationem eligendi
-            necessitatibus debitis nemo.
-          </p>
-          <p class="about-text_paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            temporibus.
+            &emsp; &emsp;Initially, web development was just one of my various
+            hobbies, which with time evolved into my profession. Now, I create
+            websites to bring people’s imagination to life and I have great fun
+            with this.
           </p>
         </div>
       </section>
       <!-- start skills section -->
-      <section id="skillsSection" class="about">
+      <section id="skillsSection" class="section-skills">
         <header class="heading-container">
           <div class="pre-heading">look at my</div>
           <h2 class="heading-secondary">Skills</h2>
@@ -165,111 +165,134 @@
           <ul class="skills-list">
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/html.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/html.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
+
                 <p class="skills-item_desc">HTML</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/css.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/css.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">CSS</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/bootstrap.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/bootstrap.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">Bootstrap</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/sass.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/sass.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">SASS</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/js.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/js.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">Javascript</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/react.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/react.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">React</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/redux.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/redux.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">Redux</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/node.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/node.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">Node</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/mongo.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/mongo.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">Mongo</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/git.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/git.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">Git</p>
               </div>
             </li>
             <li class="skills-item">
               <div class="skills-item_container">
-                <img
-                  src="./assets/skills/npm.png"
-                  alt="html logo"
-                  class="skills-item_logo"
-                />
+                <div class="skills-item_logo">
+                  <img
+                    src="./assets/skills/npm.png"
+                    alt="html logo"
+                    class="skills-item_logo-img"
+                  />
+                </div>
                 <p class="skills-item_desc">npm</p>
               </div>
             </li>
@@ -277,7 +300,7 @@
         </div>
       </section>
       <!-- start projects section -->
-      <section id="projectsSection" class="about">
+      <section id="projectsSection" class="section-projects">
         <header class="heading-container">
           <div class="pre-heading">check up my</div>
           <h2 class="heading-secondary">Projects</h2>
@@ -285,35 +308,146 @@
         <div class="projects-container">
           <div class="project">
             <div class="project-desc">
+              <h3 class="heading-tertiary">Shortly</h3>
               <div class="project-desc_tech">
-                <h3>Technologies:</h3>
-                <p>HTML, CSS, JS, REACT, NODE, MONGO</p>
+                <h4>Technologies:</h4>
+                <ul class="project-desc_tech-list">
+                  <li class="project-desc_tech-item">SASS</li>
+                  <li class="project-desc_tech-item">REACT</li>
+                  <li class="project-desc_tech-item">Node</li>
+                  <li class="project-desc_tech-item">Mongo</li>
+                </ul>
               </div>
-              <div class="project-desc_btns">
-                <button>LIVE</button>
-                <button>REPO</button>
-              </div>
+              <!-- <div class="project-desc_btns">
+                <button class="btn btn-secondary">LIVE</button>
+                <button class="btn btn-secondary">REPO</button>
+              </div> -->
               <div class="project-desc_text">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat, magni.
+                <p class="project-desc_paragraph">
+                  The platform that allows users to create a short version of
+                  long links, with a possibility to keep all links on their own
+                  account.
                 </p>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat, magni.
+                <p class="project-desc_paragraph">
+                  Design based on www.frontendmentor.io challenge.
                 </p>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat, magni.
+                <p class="project-desc_paragraph">
+                  Build with own API and login system.
                 </p>
               </div>
             </div>
             <div class="project-img">
               <img
-                class="project-img_item"
+                class="project-img_item project-img_item--1"
                 src="./assets/projects/shortly/1.jpg"
                 alt="project slideshow"
               />
+              <div class="project-img_btns">
+                <button class="btn btn-secondary">
+                  <a href="https://tj-shortly.herokuapp.com" target="_blank"
+                    ><i class="fas fa-external-link-square-alt"></i
+                  ></a>
+                </button>
+                <button class="btn btn-secondary">
+                  <a
+                    href="https://github.com/jurektomasz/shortly"
+                    target="_blank"
+                    ><i class="fab fa-github-square"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-desc">
+              <h3 class="heading-tertiary">Footly</h3>
+              <div class="project-desc_tech">
+                <h4>Technologies:</h4>
+                <ul class="project-desc_tech-list">
+                  <li class="project-desc_tech-item">SASS</li>
+                  <li class="project-desc_tech-item">Bootstrap</li>
+                  <li class="project-desc_tech-item">REACT</li>
+                  <li class="project-desc_tech-item">Redux</li>
+                  <li class="project-desc_tech-item">Node</li>
+                  <li class="project-desc_tech-item">Mongo</li>
+                </ul>
+              </div>
+              <div class="project-desc_text">
+                <p class="project-desc_paragraph">
+                  The platform that allows users to create a short version of
+                  long links, with a possibility to keep all links on their own
+                  account.
+                </p>
+                <p class="project-desc_paragraph">
+                  Design based on www.frontendmentor.io challenge.
+                </p>
+                <p class="project-desc_paragraph">
+                  Build with own API and login system.
+                </p>
+              </div>
+            </div>
+            <div class="project-img">
+              <img
+                class="project-img_item project-img_item--2"
+                src="./assets/projects/footly/1.jpg"
+                alt="project slideshow"
+              />
+              <div class="project-img_btns">
+                <button class="btn btn-secondary">
+                  <a href="https://tj-footly.herokuapp.com" target="_blank"
+                    ><i class="fas fa-external-link-square-alt"></i
+                  ></a>
+                </button>
+                <button class="btn btn-secondary">
+                  <a
+                    href="https://github.com/jurektomasz/football-app"
+                    target="_blank"
+                    ><i class="fab fa-github-square"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-desc">
+              <h3 class="heading-tertiary">Seaweed Solutions</h3>
+              <div class="project-desc_tech">
+                <h4>Technologies:</h4>
+                <ul class="project-desc_tech-list">
+                  <li class="project-desc_tech-item">Wix</li>
+                  <li class="project-desc_tech-item">Figma</li>
+                  <li class="project-desc_tech-item">Affinity Photo</li>
+                </ul>
+              </div>
+              <div class="project-desc_text">
+                <p class="project-desc_paragraph">
+                  The platform that allows users to create a short version of
+                  long links, with a possibility to keep all links on their own
+                  account.
+                </p>
+                <p class="project-desc_paragraph">
+                  Design based on www.frontendmentor.io challenge.
+                </p>
+                <p class="project-desc_paragraph">
+                  Build with own API and login system.
+                </p>
+              </div>
+            </div>
+            <div class="project-img">
+              <img
+                class="project-img_item project-img_item--3"
+                src="./assets/projects/seaweed/1.jpg"
+                alt="project slideshow"
+              />
+              <div class="project-img_btns">
+                <button class="btn btn-secondary">
+                  <a
+                    href="https://www.seaweedsolutions-crc.com/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-square-alt"></i
+                  ></a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -322,11 +456,35 @@
         <!-- ------------------- -->
       </section>
       <!-- start contact section -->
-      <section id="contactSection" class="about">
+      <section id="contactSection" class="section-contact">
         <header class="heading-container">
           <div class="pre-heading">do not hesitate to</div>
           <h2 class="heading-secondary">Contact me</h2>
         </header>
+
+        <ul class="icons icons-contact">
+          <li class="icons-item">
+            <a href="mailto:tjurek@vp.pl" class="icons-link icons-contact_link"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li class="icons-item">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              class="icons-link icons-contact_link"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </li>
+          <li class="icons-item">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="icons-link icons-contact_link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
 
         <form class="form">
           <div class="form-group">

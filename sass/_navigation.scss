@@ -11,10 +11,15 @@ aside {
   flex-direction: column;
   justify-content: space-between;
 
-  transition: width 0.6s;
+  transition: all 0.6s;
+
+  @include media-md {
+    transform: translateX(-10rem);
+  }
 
   &.active {
     width: 30rem;
+    transform: translateX(0);
   }
 }
 
@@ -34,7 +39,7 @@ aside {
   &_toggle {
     position: absolute;
     top: 1rem;
-    left: 0.9rem;
+    left: 1.6rem;
 
     width: 5rem;
     height: 5rem;
@@ -44,6 +49,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 20;
 
     &.active {
       background-color: $third-color;
@@ -131,12 +137,17 @@ aside {
   }
 
   &-link {
+    color: $main-color;
     width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: color 0.1s;
+
+    &:hover {
+      color: $third-color;
+    }
 
     &_icon i {
       width: 2rem;
@@ -146,5 +157,18 @@ aside {
       justify-content: center;
       align-items: center;
     }
+  }
+}
+
+.logo {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: $third-color;
+
+  &-name {
+    font-size: 4rem;
   }
 }

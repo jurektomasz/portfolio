@@ -1,11 +1,18 @@
-// .heading-container {
-//   margin-bottom: 4rem;
-// }
+.heading-container {
+  margin-bottom: 4rem;
+}
 
 .heading-secondary {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 4rem;
+}
+
+.heading-tertiary {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .pre-heading {
@@ -34,4 +41,12 @@
 .heading-desc {
   font-size: 4rem;
   letter-spacing: 1rem;
+
+  @include media-md {
+    letter-spacing: 8px;
+  }
+}
+
+figcaption {
+  text-align: right;
 }

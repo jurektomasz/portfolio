@@ -1,7 +1,16 @@
 @import "./variables";
+@import "./responsive";
+
 @import "./typography";
 @import "./about";
 @import "./skills";
+@import "./contact";
+@import "./sections";
+@import "./buttons";
+@import "./navigation";
+@import "./projects";
+@import "./form";
+@import "./footer";
 
 * {
   margin: 0;
@@ -11,6 +20,11 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
+
+  @include media-sm {
+    font-size: 9px;
+  }
 }
 
 body {
@@ -24,56 +38,5 @@ ul {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
 }
-
-figcaption {
-  text-align: right;
-}
-
-.icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-left: -1rem;
-
-  &-link {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-
-    &:hover {
-      color: $third-color;
-    }
-  }
-}
-
-.logo {
-  margin-top: 10rem;
-  margin-bottom: 2rem;
-  margin-right: 1rem;
-  text-align: center;
-  padding: 1rem;
-  color: $third-color;
-
-  &-name {
-    font-size: 4rem;
-  }
-}
-
-.skills-list {
-  display: flex;
-}
-.skills-item {
-  padding: 1rem;
-}
-
-@import "./sections";
-@import "./buttons";
-@import "./navigation";
-@import "./projects";
-@import "./form";
-@import "./footer";
