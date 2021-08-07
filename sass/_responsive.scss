@@ -5,7 +5,7 @@
 }
 
 @mixin media-lg {
-  @media screen and (max-width: 62.5em) {
+  @media screen and (max-width: 64em) {
     @content;
   }
 }
@@ -18,6 +18,12 @@
 
 @mixin media-sm {
   @media screen and (max-width: 39.68em) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media screen and (max-width: 25em) {
     @content;
   }
 }

@@ -141,17 +141,16 @@
 
         <div class="about-text">
           <p class="about-text_paragraph">
-            &emsp; &emsp;I am Tomasz Jurek, self-taught front-end developer a
-            front-end developer with an economic background. With passion to
-            coding and creating new things I am able to make coherent and unique
-            websites and applications that are usable and accessible to anyone.
-            Check out my latest project on the web portfolio page.
+            &emsp; &emsp;I am Tomasz Jurek, front-end developer with an economic
+            background. I create coherent and unique websites and applications
+            that are usable and accessible to anyone. Check out my latest
+            project on the web portfolio page.
           </p>
           <p class="about-text_paragraph">
             &emsp; &emsp;Initially, web development was just one of my various
-            hobbies, which with time evolved into my profession. Now, I create
+            hobbies, which with time evolved into my profession. Now, I build
             websites to bring people’s imagination to life and I have great fun
-            with this.
+            with that.
           </p>
         </div>
       </section>
@@ -318,10 +317,6 @@
                   <li class="project-desc_tech-item">Mongo</li>
                 </ul>
               </div>
-              <!-- <div class="project-desc_btns">
-                <button class="btn btn-secondary">LIVE</button>
-                <button class="btn btn-secondary">REPO</button>
-              </div> -->
               <div class="project-desc_text">
                 <p class="project-desc_paragraph">
                   The platform that allows users to create a short version of
@@ -329,10 +324,11 @@
                   account.
                 </p>
                 <p class="project-desc_paragraph">
-                  Design based on www.frontendmentor.io challenge.
+                  Design based on <i>www.frontendmentor.io</i> challenge.
                 </p>
                 <p class="project-desc_paragraph">
-                  Build with own API and login system.
+                  Built with own shortening API and login system with jwt
+                  authentication.
                 </p>
               </div>
             </div>
@@ -342,6 +338,7 @@
                 src="./assets/projects/shortly/1.jpg"
                 alt="project slideshow"
               />
+
               <div class="project-img_btns">
                 <button class="btn btn-secondary">
                   <a href="https://tj-shortly.herokuapp.com" target="_blank"
@@ -374,15 +371,17 @@
               </div>
               <div class="project-desc_text">
                 <p class="project-desc_paragraph">
-                  The platform that allows users to create a short version of
-                  long links, with a possibility to keep all links on their own
-                  account.
+                  An appointment website for a football games. The user has the
+                  option to create his own event or to participate in already
+                  existing one.
                 </p>
                 <p class="project-desc_paragraph">
-                  Design based on www.frontendmentor.io challenge.
+                  The TomTom Maps Api was used to determine the location of the
+                  event.
                 </p>
                 <p class="project-desc_paragraph">
-                  Build with own API and login system.
+                  Built with jwt authentication registration system and redux to
+                  store data.
                 </p>
               </div>
             </div>
@@ -392,6 +391,7 @@
                 src="./assets/projects/footly/1.jpg"
                 alt="project slideshow"
               />
+
               <div class="project-img_btns">
                 <button class="btn btn-secondary">
                   <a href="https://tj-footly.herokuapp.com" target="_blank"
@@ -421,24 +421,26 @@
               </div>
               <div class="project-desc_text">
                 <p class="project-desc_paragraph">
-                  The platform that allows users to create a short version of
-                  long links, with a possibility to keep all links on their own
-                  account.
+                  Website created for a scientific project researching seaweed
+                  for commercial use.
                 </p>
                 <p class="project-desc_paragraph">
-                  Design based on www.frontendmentor.io challenge.
+                  A wireframe was created using Figma, which was presented to
+                  and approved by the client.
                 </p>
                 <p class="project-desc_paragraph">
-                  Build with own API and login system.
+                  Built using affinity photo to handle images (like cropping or
+                  cutting out background) and WIX as requested by the client.
                 </p>
               </div>
             </div>
             <div class="project-img">
               <img
                 class="project-img_item project-img_item--3"
-                src="./assets/projects/seaweed/1.jpg"
+                src="./assets/projects/seaweed/1sm.jpg"
                 alt="project slideshow"
               />
+
               <div class="project-img_btns">
                 <button class="btn btn-secondary">
                   <a
@@ -451,9 +453,6 @@
             </div>
           </div>
         </div>
-        <!-- FOR SHORTLY PROJECT -->
-        <!-- www.frontendmentor.io -->
-        <!-- ------------------- -->
       </section>
       <!-- start contact section -->
       <section id="contactSection" class="section-contact">
@@ -494,6 +493,7 @@
               class="form-input"
               name="name"
               placeholder="Name*"
+              required
             /><label for="inputName" class="form-label"></label>
           </div>
           <div class="form-group">
@@ -503,6 +503,7 @@
               class="form-input"
               name="email"
               placeholder="Email*"
+              required
             /><label for="inputEmail" class="form-label"></label>
           </div>
           <div class="form-group">
@@ -512,6 +513,7 @@
               class="form-input"
               name="subject"
               placeholder="Subject*"
+              required
             /><label for="inputSubject" class="form-label"></label>
           </div>
           <div class="form-group">
@@ -520,6 +522,7 @@
               id="inputMessage"
               class="form-input"
               placeholder="Your message*"
+              required
             ></textarea>
             <label for="inputMessage" class="form-label"></label>
           </div>

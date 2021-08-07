@@ -1,14 +1,23 @@
-// // toggle active class on clicked nav item
-const navList = document.querySelectorAll(".navigation-item");
-// for (let i = 0; i < navList.length; i++) {
-//   navList[i].addEventListener("click", () => {
-//     let j = 0;
-//     while (j < navList.length) {
-//       navList[j++].className = "navigation-item";
-//     }
-//     navList[i].className = "navigation-item active";
-//   });
-// }
+//projects images automatic slideshow
+const projectOne = document.querySelector(".project-img_item--1");
+const projectTwo = document.querySelector(".project-img_item--2");
+const projectThree = document.querySelector(".project-img_item--3");
+
+function slideShow(project, name, imgQuantity, counter) {
+  if (counter < imgQuantity) {
+    setTimeout(function () {
+      counter++;
+      project.src = `./assets/projects/${name}/${counter}.jpg`;
+      slideShow(project, name, imgQuantity, counter);
+    }, 1800);
+  } else {
+    project.src = `./assets/projects/${name}/${counter}.jpg`;
+    slideShow(project, name, imgQuantity, 0);
+  }
+}
+slideShow(projectOne, "shortly", 7, 1);
+slideShow(projectTwo, "footly", 6, 1);
+slideShow(projectThree, "seaweed", 4, 1);
 
 //toggle nav button
 const toggleBtn = document.querySelector(".side-nav_toggle");
@@ -19,6 +28,7 @@ toggleBtn.addEventListener("click", () => {
 });
 
 // toggle active class on nav item on document/main scroll
+const navList = document.querySelectorAll(".navigation-item");
 const welcomeSection = document.querySelector("#skillsSection");
 const aboutSection = document.querySelector("#aboutSection");
 const skillsSection = document.querySelector("#skillsSection");

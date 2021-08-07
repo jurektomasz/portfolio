@@ -1,3 +1,50 @@
+.form {
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 1rem;
+
+  @include media-lg {
+    width: 90%;
+  }
+
+  &-group {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &-input {
+    font-size: 2rem;
+    color: $second-color;
+    width: inherit;
+    padding: 1.5rem 2rem;
+    border: 1px solid rgba($second-color, 0.4);
+    border-radius: 1rem;
+    background-color: rgba($third-color, 0.05);
+    background-color: $main-color;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: rgba($third-color, 0.4);
+    }
+    &::placeholder {
+      font-size: 1.6rem;
+    }
+  }
+  &-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+  }
+}
+
 .icons {
   display: flex;
   flex-direction: column;

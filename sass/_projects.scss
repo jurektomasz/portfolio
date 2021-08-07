@@ -15,9 +15,9 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 
-  @include media-lg {
+  @include media-xl {
     flex-direction: column;
   }
 
@@ -56,11 +56,13 @@
     }
     &_paragraph {
       margin-top: 1rem;
+      line-height: 1.2;
     }
   }
 
   &-img {
     flex: 1;
+    position: relative;
 
     &_item {
       width: 100%;

@@ -1,15 +1,13 @@
 @import "./variables";
 @import "./responsive";
-
 @import "./typography";
-@import "./about";
-@import "./skills";
-@import "./contact";
-@import "./sections";
 @import "./buttons";
 @import "./navigation";
+@import "./welcome";
+@import "./about";
+@import "./skills";
 @import "./projects";
-@import "./form";
+@import "./contact";
 @import "./footer";
 
 * {
@@ -25,6 +23,9 @@ html {
   @include media-sm {
     font-size: 9px;
   }
+  @include media-xs {
+    font-size: 8px;
+  }
 }
 
 body {
@@ -39,4 +40,36 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 8rem;
+  scroll-behavior: smooth;
+
+  @include media-md {
+    margin-left: 0;
+  }
+}
+
+.section {
+  &-about,
+  &-skills,
+  &-projects,
+  &-contact {
+    display: flex;
+    min-height: 60vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 4rem;
+
+    @include media-sm {
+      padding: 1rem;
+    }
+  }
 }
