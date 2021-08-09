@@ -49,6 +49,7 @@ figcaption {
   color: #fff9fb;
   border-radius: 1rem;
   background: #f8804a;
+  text-shadow: 1px 1px 0px #044b7f;
   transition: all 0.3s; }
   .btn-primary:hover {
     color: #f8804a;
@@ -341,7 +342,8 @@ aside {
       margin: 1rem;
       color: #fff9fb;
       border-radius: 1rem;
-      background-color: #f8804a; }
+      background-color: #f8804a;
+      text-shadow: 1px 1px 1px #044b7f; }
     .project-desc_paragraph {
       margin-top: 1rem;
       line-height: 1.2; }
